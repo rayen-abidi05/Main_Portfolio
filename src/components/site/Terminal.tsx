@@ -27,7 +27,7 @@ function colorize(line: string) {
   }
   const match = line.match(/^(\s*)"([^"]+)":\s*(.*)$/);
   if (match) {
-    const [, space, key, value] = match;
+    const [, space, key, value] = match as unknown as [string, string, string, string];
     return (
       <>
         {space}
@@ -50,8 +50,8 @@ export function Terminal() {
     const el = ref.current;
     if (!el) return;
     const io = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) setStarted(true);
+      (entries) => {
+        if (entries[0]?.isIntersecting) setStarted(true);
       },
       { threshold: 0.35 },
     );
