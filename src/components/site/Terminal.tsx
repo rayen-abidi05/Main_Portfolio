@@ -17,6 +17,7 @@ const script = `rayen@portfolio:~$ whoami
 
 function colorize(line: string) {
   if (line.startsWith("rayen@portfolio")) {
+    if (!line.includes("$ ")) return <span className="text-signal">{line}</span>;
     const [prompt, ...rest] = line.split("$ ");
     return (
       <>
