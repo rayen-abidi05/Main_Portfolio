@@ -1,9 +1,10 @@
 import { motion } from "motion/react";
 import { Github, ExternalLink, Check } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
-import fileSharing from "@/assets/project-filesharing.jpg";
-import food from "@/assets/project-food.jpg";
-import portfolio from "@/assets/project-portfolio.jpg";
+import fileSharing from "@/assets/sharing.jpg";
+import food from "@/assets/food.jpg";
+import portfolio from "@/assets/portfolio.jpg";
+import Olex from "@/assets/project-olex.jpg";
 
 type Project = {
   index: string;
@@ -13,11 +14,40 @@ type Project = {
   tech: string[];
   image: string;
   alt: string;
+  github: string;
+  demo: string;
 };
 
 const projects: Project[] = [
   {
     index: "01",
+    title: "Olex-TN",
+    description:
+      "A digital platform for streamlining agricultural export procedures through centralized workflows, document management, automated reporting, and multi-role collaboration.",
+    features: [
+      "Role-based authentication",
+      "Export request management",
+      "Document management",
+      "Automated email notifications",
+      "PDF, Excel & CSV generation",
+      "Multi-role dashboards",
+    ],
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+    ],
+    image: Olex,
+    alt: "Olex-TN agricultural export management platform dashboard",
+    github: "https://github.com/rayen-abidi05/Olex-TN",
+    demo: "https://github.com/rayen-abidi05/Olex-TN",
+  },
+
+  {
+    index: "02",
     title: "Secure File Sharing Platform",
     description:
       "A secure platform for sharing files with authentication, permissions, and activity tracking.",
@@ -29,27 +59,35 @@ const projects: Project[] = [
       "Notifications",
       "Activity tracking",
     ],
-    tech: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Docker"],
+    tech: ["Next.js","Tailwind CSS", "Express.js", "PostgreSQL", "Prisma"],
     image: fileSharing,
     alt: "Dashboard of the secure file sharing platform showing files and permissions",
+    github: "https://github.com/rayen-abidi05/sharing",
+    demo: "https://github.com/rayen-abidi05/sharing",
   },
-  {
-    index: "02",
-    title: "Food Application",
-    description:
-      "A modern food application focused on user experience, ordering workflow, and responsive design.",
-    tech: ["Next.js", "React", "Tailwind CSS", "Node.js"],
-    image: food,
-    alt: "Food ordering application shown on mobile and desktop",
-  },
+
   {
     index: "03",
-    title: "Developer Portfolio",
+    title: "FOODY",
+    description:
+      "A full-stack recipe platform featuring nutritional analysis, categorized dishes, authentication, personal recipe management, and an administration system.",
+    tech: ["Next.js", "Tailwind CSS", "Express.js" , "MySql"],
+    image: food,
+    alt: "FOODY recipe and nutrition platform displayed on mobile and desktop",
+    github: "https://github.com/rayen-abidi05/Foody",
+    demo: "https://github.com/rayen-abidi05/Foody",
+  },
+
+  {
+    index: "04",
+    title: "My Portfolio",
     description:
       "The portfolio itself, built with modern frontend technologies and advanced animations.",
-    tech: ["Next.js", "TypeScript", "Framer Motion", "Three.js"],
+    tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Three.js"],
     image: portfolio,
     alt: "Developer portfolio website with animated 3D workspace scene",
+    github: "https://github.com/rayen-abidi05/Main_Portfolio",
+    demo: "https://portfolio-seven-eta-iosr9tfhdi.vercel.app/",
   },
 ];
 
@@ -106,24 +144,25 @@ function ProjectCard({ project, flip }: { project: Project; flip: boolean }) {
           ))}
         </ul>
 
-        <div className="mt-7 flex flex-wrap gap-3">
-          <a
-            href="https://github.com/"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="inline-flex items-center gap-2 rounded-xl border border-border bg-secondary/70 px-4 py-2.5 text-sm font-medium transition-all hover:-translate-y-0.5 hover:border-primary/60"
-          >
-            <Github className="h-4 w-4" /> GitHub
-          </a>
-          <a
-            href="https://github.com/"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="inline-flex items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5"
-            style={{ background: "var(--gradient-aurora)" }}
-          >
-            <ExternalLink className="h-4 w-4" /> Live demo
-          </a>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="inline-flex items-center gap-2 rounded-xl border border-border bg-secondary/70 px-4 py-2.5 text-sm font-medium transition-all hover:-translate-y-0.5 hover:border-primary/60"
+            >
+              <Github  className="h-4 w-4" /> GitHub
+            </a>
+
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="inline-flex items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5"
+              style={{ background: "var(--gradient-aurora)" }}
+            >
+              <ExternalLink className="h-4 w-4" /> Live demo
+            </a>
         </div>
       </div>
     </motion.article>
@@ -135,8 +174,8 @@ export function Projects() {
     <section id="projects" className="relative mx-auto max-w-6xl scroll-mt-24 px-5 py-20">
       <SectionHeading
         eyebrow="Projects"
-        title="Selected work, as case studies"
-        description="Each project below solved a concrete problem: access control, ordering flow, or presenting engineering work convincingly."
+        title="Selected work"
+        description="Real-world problems, thoughtfully engineered solutions — from secure platforms and complex workflows to intuitive user experiences."
       />
       <div className="mt-10 grid gap-6">
         {projects.map((p, i) => (

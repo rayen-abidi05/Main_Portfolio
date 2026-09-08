@@ -39,7 +39,7 @@ export function ContactSection() {
                 Let&apos;s build something <span className="text-aurora">impactful.</span>
               </>
             }
-            description="Open to internships, full-time roles and freelance projects. I usually reply within a day."
+            description="Looking for a PFE internship, while also open to freelance projects. Let's build something meaningful together. I usually reply within a day."
           />
         </div>
 
@@ -79,7 +79,7 @@ export function ContactSection() {
             <Mail className="h-4 w-4" /> Email me
           </a>
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/rayen-abidi-9610913bb/"
             target="_blank"
             rel="noreferrer noopener"
             className="inline-flex items-center gap-2 rounded-xl border border-border bg-secondary/70 px-5 py-3 text-sm font-medium transition-all hover:-translate-y-0.5 hover:border-primary/60"
@@ -87,7 +87,7 @@ export function ContactSection() {
             <Linkedin className="h-4 w-4" /> LinkedIn
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/rayen-abidi05"
             target="_blank"
             rel="noreferrer noopener"
             className="inline-flex items-center gap-2 rounded-xl border border-border bg-secondary/70 px-5 py-3 text-sm font-medium transition-all hover:-translate-y-0.5 hover:border-primary/60"

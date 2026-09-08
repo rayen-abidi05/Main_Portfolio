@@ -2,10 +2,10 @@ import { motion } from "motion/react";
 import { SectionHeading } from "./SectionHeading";
 
 const steps = [
-  { n: "01", title: "Planning & Architecture", text: "Scope, data model, and system boundaries before a single component." },
-  { n: "02", title: "Frontend Development", text: "Component library, states, responsiveness and accessibility." },
-  { n: "03", title: "Backend API Development", text: "Typed REST endpoints, validation, auth and error contracts." },
-  { n: "04", title: "Database Design", text: "Normalised schemas, migrations and indexed queries with Prisma." },
+  { n: "01", title: "Planning & Architecture", text: "Scope, system boundaries, and technology stack selection before writing code." },
+  { n: "02", title: "Database Design", text: "Normalised schemas, migrations, and indexed queries with Prisma." },
+  { n: "03", title: "Backend API Development", text: "Typed REST endpoints, validation, auth, and error contracts." },
+  { n: "04", title: "Frontend Development", text: "Component library, state management, responsiveness, and accessibility." },
   { n: "05", title: "Testing & Deployment", text: "Dockerised builds, environment config, and shipping to production." },
 ];
 

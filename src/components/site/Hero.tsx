@@ -2,11 +2,21 @@ import { motion } from "motion/react";
 import { ArrowRight, MapPin } from "lucide-react";
 import { Workspace3D } from "./Workspace3D";
 
-const badges = ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Prisma", "Docker"];
+const badges = [
+  "Next.js",
+  "TypeScript",
+  "Node.js",
+  "PostgreSQL",
+  "Prisma",
+  "Docker",
+];
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28">
+    <section
+      id="top"
+      className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28"
+    >
       <div className="pointer-events-none absolute inset-0 radial-glow" />
       <div className="pointer-events-none absolute inset-0 grid-overlay" />
 
@@ -22,8 +32,9 @@ export function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-signal opacity-70" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-signal" />
             </span>
+
             <span className="font-mono text-[11px] tracking-wide text-muted-foreground">
-              Available for internships &amp; freelance
+              Available for internships & freelance  
             </span>
           </motion.div>
 
@@ -60,8 +71,8 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.24 }}
             className="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground"
           >
-            I design and develop full-stack applications, from intuitive user interfaces to secure
-            backend architectures.
+            I design and develop full-stack applications, from intuitive user
+            interfaces to secure and scalable backend architectures.
           </motion.p>
 
           <motion.ul
@@ -94,14 +105,17 @@ export function Hero() {
               View Projects
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
+
             <a
               href="#contact"
               className="inline-flex items-center gap-2 rounded-xl border border-border bg-secondary/70 px-6 py-3 text-sm font-medium text-foreground transition-all hover:-translate-y-0.5 hover:border-primary/60"
             >
               Contact Me
             </a>
+
             <span className="ml-1 inline-flex items-center gap-1.5 text-xs text-muted-foreground">
-              <MapPin className="h-3.5 w-3.5" /> Tunisia
+              <MapPin className="h-3.5 w-3.5" />
+              Tunisia
             </span>
           </motion.div>
         </div>
