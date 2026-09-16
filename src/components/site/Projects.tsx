@@ -87,7 +87,7 @@ const projects: Project[] = [
     image: portfolio,
     alt: "Developer portfolio website with animated 3D workspace scene",
     github: "https://github.com/rayen-abidi05/Main_Portfolio",
-    demo: "https://portfolio-seven-eta-iosr9tfhdi.vercel.app/",
+    demo: "https://main-portfolio-blue-alpha.vercel.app/",
   },
 ];
 
