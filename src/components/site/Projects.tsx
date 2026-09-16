@@ -75,7 +75,7 @@ const projects: Project[] = [
     image: food,
     alt: "FOODY recipe and nutrition platform displayed on mobile and desktop",
     github: "https://github.com/rayen-abidi05/Foody",
-    demo: "https://github.com/rayen-abidi05/Foody",
+    demo: "https://foody-omega-flax.vercel.app/",
   },
 
   {
