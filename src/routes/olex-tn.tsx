@@ -163,12 +163,14 @@ const workflows: {
 ];
 
 const contribution = [
-  "Frontend interfaces for the different user roles",
-  "REST API integration between the client and the Express.js backend",
-  "Authentication and role-based access with JWT",
-  "Database interactions through Prisma and PostgreSQL",
-  "Role-based workflows and document management",
-  "Application architecture, alongside the rest of the team",
+  "Led the technical development of the two-person team",
+  "Designed and implemented core frontend and backend features",
+  "Developed frontend interfaces and role-specific dashboards",
+  "Implemented REST API integration with the Express.js backend",
+  "Implemented JWT authentication and role-based access control",
+  "Designed and integrated the database layer with Prisma and PostgreSQL",
+  "Implemented registration, export, validation and document-management workflows",
+  "Guided and supported my teammate throughout the development process",
 ];
 
 const stack: { group: string; items: string[] }[] = [
@@ -343,16 +345,16 @@ function OlexTnCaseStudy() {
               <span className="size-2.5 rounded-full bg-sky-400/80" />
               <span className={`${mono} ml-3 text-[11px] text-white/40`}>bash — olex-tn</span>
             </div>
-            <pre className={`${mono} overflow-x-auto p-5 text-[12.5px] leading-6 text-white/75`}>
-{`$ cat project.json
-{
-  "name": "Olex-TN",
-  "domain": "Olive-oil export",
-  "roles": 7,
-  "workflows": 3,
-  "internship": "June – July 2026",
-  "source": "private"
-}`}
+            <pre className={`${mono} overflow-x-hidden p-5 text-[12.5px] leading-6 text-white/75`}>
+            {`$ cat project.json
+            {
+            "name": "Olex-TN",
+            "domain": "Olive-oil export",
+            "team": 2,
+            "role": "Team Lead & Full-Stack",
+            "internship": "June – July 2026",
+            "source": "private"
+            }`}
             </pre>
           </motion.div>
         </section>
@@ -380,9 +382,10 @@ function OlexTnCaseStudy() {
             <Reveal delay={0.08}>
               <dl className={`${card} grid h-full gap-5 p-6 sm:p-8`}>
                 {[
-                  { icon: Building2, k: "Organization", v: "DG Études et Développement Agricole — Ministère de l’Agriculture" },
+                  { icon: Building2, k: "Organization", v: "DGEDA— Ministère de l’Agriculture" },
                   { icon: CalendarDays, k: "Period", v: "June 2026 – July 2026 (1 month)" },
-                  { icon: KeyRound, k: "Context", v: "Internship, team project" },
+                  { icon: KeyRound, k: "Role", v: "Team Lead & Full-Stack Developer" },
+                  { icon: Users, k: "Team", v: "2 developers" },
                 ].map(({ icon: Icon, k, v }) => (
                   <div key={k} className="flex gap-3">
                     <span className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-lg border border-white/[0.08] bg-white/[0.04]">
@@ -404,7 +407,7 @@ function OlexTnCaseStudy() {
           id="complexity"
           eyebrow="Scope"
           title="More than a CRUD app"
-          lead="Six concerns that interact with each other, each shaped by who is using the system."
+          lead="Several interconnected concerns shaped by the role of each user in the system."
         >
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {complexity.map(({ icon: Icon, title, text }, i) => (
@@ -466,7 +469,7 @@ function OlexTnCaseStudy() {
           id="architecture"
           eyebrow="Architecture"
           title="A layered full-stack setup"
-          lead="A conventional, maintainable request path from the interface down to the database."
+          lead="The application follows a layered request path from the interface to the REST API, ORM and PostgreSQL database."
         >
           <Reveal>
             <div className={`${card} p-5 sm:p-8`}>
@@ -590,31 +593,67 @@ function OlexTnCaseStudy() {
         </Section>
 
         {/* -------------------------- CONTRIBUTION -------------------------- */}
-        <Section id="contribution" eyebrow="Contribution" title="What I worked on">
+        <Section
+            id="contribution"
+            eyebrow="My role"
+            title="Team Lead & Full-Stack Developer"
+            lead="I led the technical development of Olex-TN within a two-person team."
+            >
           <div className="grid gap-4 lg:grid-cols-[1.3fr_1fr]">
             <Reveal>
-              <div className={`${card} h-full p-6 sm:p-8`}>
-                <p className="text-sm leading-relaxed text-white/65">
-                  I contributed to the design and development of the full-stack application as part of a
-                  team during my internship. My work covered:
-                </p>
-                <ul className="mt-5 space-y-3">
-                  {contribution.map((c) => (
-                    <li key={c} className="flex gap-3 text-sm text-white/75">
-                      <Check className="mt-0.5 size-4 shrink-0 text-[oklch(0.75_0.15_165)]" aria-hidden />
-                      {c}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </Reveal>
+                <div className={`${card} h-full p-6 sm:p-8`}>
+                    <p className={`${mono} text-[11px] text-white/40`}>My contribution</p>
+
+                    <p className="mt-3 text-sm leading-relaxed text-white/65">
+                    I led the technical development of Olex-TN within a two-person team.
+                    I was responsible for the majority of the application's implementation,
+                    working across the frontend, backend, database integration and core
+                    business workflows.
+                    </p>
+
+                    <ul className="mt-5 space-y-3">
+                    {contribution.map((c) => (
+                        <li key={c} className="flex gap-3 text-sm text-white/75">
+                        <Check
+                            className="mt-0.5 size-4 shrink-0 text-[oklch(0.75_0.15_165)]"
+                            aria-hidden
+                        />
+                        {c}
+                        </li>
+                    ))}
+                    </ul>
+                </div>
+                </Reveal>
             <Reveal delay={0.08}>
               <div className={`${card} h-full p-6 sm:p-8`}>
-                <p className={`${mono} text-[11px] text-white/40`}>Team project</p>
+                <p className={`${mono} text-[11px] text-white/40`}>Team & collaboration</p>
+
                 <p className="mt-2 text-sm leading-relaxed text-white/60">
-                  Olex-TN was built collaboratively within a one-month internship. The scope above
-                  reflects my part of the work, not the whole system.
+                Olex-TN was developed by a two-person team during a one-month internship.
+                I led the technical implementation and guided my teammate throughout the
+                development process.
                 </p>
+
+                <div className="mt-5 space-y-3">
+                <div className="rounded-xl border border-white/[0.07] bg-white/[0.02] p-4">
+                    <p className={`${mono} text-[10px] uppercase tracking-wider text-white/35`}>
+                    My role
+                    </p>
+                    <p className="mt-1 text-sm text-white/80">
+                    Team Lead · Full-Stack Developer
+                    </p>
+                </div>
+
+                <div className="rounded-xl border border-white/[0.07] bg-white/[0.02] p-4">
+                    <p className={`${mono} text-[10px] uppercase tracking-wider text-white/35`}>
+                    Teammate
+                    </p>
+                    <p className="mt-1 text-sm leading-relaxed text-white/60">
+                    Contributed to the About and Contact pages and collaborated on the
+                    Clueso walkthrough and project documentation.
+                    </p>
+                </div>
+                </div>
               </div>
             </Reveal>
           </div>
