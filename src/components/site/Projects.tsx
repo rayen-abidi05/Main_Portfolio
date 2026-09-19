@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Github, ExternalLink, Check } from "lucide-react";
+import { Github, ExternalLink, Check, ArrowUpRight } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 import fileSharing from "@/assets/sharing.jpg";
 import food from "@/assets/food.jpg";
@@ -14,8 +14,9 @@ type Project = {
   tech: string[];
   image: string;
   alt: string;
-  github: string;
-  demo: string;
+  github?: string;
+  primaryLink: string;
+  primaryLabel: string;
 };
 
 const projects: Project[] = [
@@ -23,7 +24,7 @@ const projects: Project[] = [
     index: "01",
     title: "Olex-TN",
     description:
-      "A digital platform for streamlining agricultural export procedures through centralized workflows, document management, automated reporting, and multi-role collaboration.",
+      "A multi-role platform designed to streamline olive oil export procedures through centralized workflows, document management, automated reporting, and role-based collaboration.",
     features: [
       "Role-based authentication",
       "Export request management",
@@ -42,8 +43,12 @@ const projects: Project[] = [
     ],
     image: Olex,
     alt: "Olex-TN agricultural export management platform dashboard",
-    github: "https://github.com/rayen-abidi05/Olex-TN",
-    demo: "https://github.com/rayen-abidi05/Olex-TN",
+
+   
+    github: "",
+
+    primaryLink: "/olex-tn",
+    primaryLabel: "Case Study",
   },
 
   {
@@ -59,11 +64,21 @@ const projects: Project[] = [
       "Notifications",
       "Activity tracking",
     ],
-    tech: ["Next.js","Tailwind CSS", "Express.js", "PostgreSQL", "Prisma"],
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma",
+    ],
     image: fileSharing,
     alt: "Dashboard of the secure file sharing platform showing files and permissions",
+
     github: "https://github.com/rayen-abidi05/sharing",
-    demo: "https://github.com/rayen-abidi05/sharing",
+
+    
+    primaryLink: "https://github.com/rayen-abidi05/sharing",
+    primaryLabel: "View Project",
   },
 
   {
@@ -71,11 +86,19 @@ const projects: Project[] = [
     title: "FOODY",
     description:
       "A full-stack recipe platform featuring nutritional analysis, categorized dishes, authentication, personal recipe management, and an administration system.",
-    tech: ["Next.js", "Tailwind CSS", "Express.js" , "MySql"],
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "Express.js",
+      "MySQL",
+    ],
     image: food,
     alt: "FOODY recipe and nutrition platform displayed on mobile and desktop",
+
     github: "https://github.com/rayen-abidi05/Foody",
-    demo: "https://foody-omega-flax.vercel.app/",
+
+    primaryLink: "https://foody-omega-flax.vercel.app/",
+    primaryLabel: "Live Demo",
   },
 
   {
@@ -83,15 +106,31 @@ const projects: Project[] = [
     title: "My Portfolio",
     description:
       "The portfolio itself, built with modern frontend technologies and advanced animations.",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Three.js"],
+    tech: [
+      "React",
+      "Tailwind CSS",
+      "Motion",
+      "Three.js",
+    ],
     image: portfolio,
     alt: "Developer portfolio website with animated 3D workspace scene",
+
     github: "https://github.com/rayen-abidi05/Main_Portfolio",
-    demo: "https://main-portfolio-blue-alpha.vercel.app/",
+
+    primaryLink: "https://main-portfolio-blue-alpha.vercel.app/",
+    primaryLabel: "Live Demo",
   },
 ];
 
-function ProjectCard({ project, flip }: { project: Project; flip: boolean }) {
+function ProjectCard({
+  project,
+  flip,
+}: {
+  project: Project;
+  flip: boolean;
+}) {
+  const isExternal = project.primaryLink.startsWith("http");
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 36 }}
@@ -102,6 +141,7 @@ function ProjectCard({ project, flip }: { project: Project; flip: boolean }) {
     >
       <div className={`relative ${flip ? "lg:order-2" : ""}`}>
         <div className="absolute -inset-4 rounded-3xl bg-primary/10 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100" />
+
         <div className="relative overflow-hidden rounded-2xl border border-border">
           <img
             src={project.image}
@@ -111,58 +151,77 @@ function ProjectCard({ project, flip }: { project: Project; flip: boolean }) {
             height={800}
             className="w-full transition-transform duration-700 ease-out group-hover:scale-[1.04]"
           />
+
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/70 to-transparent" />
         </div>
       </div>
 
       <div className="min-w-0">
-        <span className="font-mono text-xs tracking-[0.3em] text-violet">{project.index}</span>
+        <span className="font-mono text-xs tracking-[0.3em] text-violet">
+          {project.index}
+        </span>
+
         <h3 className="mt-3 font-display text-2xl font-semibold tracking-tight sm:text-3xl">
           {project.title}
         </h3>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{project.description}</p>
+
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          {project.description}
+        </p>
 
         {project.features && (
           <ul className="mt-5 grid gap-2 sm:grid-cols-2">
-            {project.features.map((f) => (
-              <li key={f} className="flex items-center gap-2 text-sm text-foreground/85">
+            {project.features.map((feature) => (
+              <li
+                key={feature}
+                className="flex items-center gap-2 text-sm text-foreground/85"
+              >
                 <Check className="h-3.5 w-3.5 shrink-0 text-signal" />
-                {f}
+                {feature}
               </li>
             ))}
           </ul>
         )}
 
         <ul className="mt-6 flex flex-wrap gap-2">
-          {project.tech.map((t) => (
+          {project.tech.map((tech) => (
             <li
-              key={t}
+              key={tech}
               className="rounded-lg glass px-2.5 py-1 font-mono text-[11px] text-muted-foreground"
             >
-              {t}
+              {tech}
             </li>
           ))}
         </ul>
 
-          <div className="mt-7 flex flex-wrap gap-3">
+        <div className="mt-7 flex flex-wrap gap-3">
+          {project.github && (
             <a
               href={project.github}
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex items-center gap-2 rounded-xl border border-border bg-secondary/70 px-4 py-2.5 text-sm font-medium transition-all hover:-translate-y-0.5 hover:border-primary/60"
             >
-              <Github  className="h-4 w-4" /> GitHub
+              <Github className="h-4 w-4" />
+              GitHub
             </a>
+          )}
 
-            <a
-              href={project.demo}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="inline-flex items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5"
-              style={{ background: "var(--gradient-aurora)" }}
-            >
-              <ExternalLink className="h-4 w-4" /> Live demo
-            </a>
+          <a
+            href={project.primaryLink}
+            target={isExternal ? "_blank" : undefined}
+            rel={isExternal ? "noreferrer noopener" : undefined}
+            className="inline-flex items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5"
+            style={{ background: "var(--gradient-aurora)" }}
+          >
+            {isExternal ? (
+              <ExternalLink className="h-4 w-4" />
+            ) : (
+              <ArrowUpRight className="h-4 w-4" />
+            )}
+
+            {project.primaryLabel}
+          </a>
         </div>
       </div>
     </motion.article>
@@ -171,17 +230,26 @@ function ProjectCard({ project, flip }: { project: Project; flip: boolean }) {
 
 export function Projects() {
   return (
-    <section id="projects" className="relative mx-auto max-w-6xl scroll-mt-24 px-5 py-20">
+    <section
+      id="projects"
+      className="relative mx-auto max-w-6xl scroll-mt-24 px-5 py-20"
+    >
       <SectionHeading
         eyebrow="Projects"
         title="Selected work"
         description="Real-world problems, thoughtfully engineered solutions — from secure platforms and complex workflows to intuitive user experiences."
       />
+
       <div className="mt-10 grid gap-6">
-        {projects.map((p, i) => (
-          <ProjectCard key={p.title} project={p} flip={i % 2 === 1} />
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={project.title}
+            project={project}
+            flip={index % 2 === 1}
+          />
         ))}
       </div>
     </section>
   );
 }
+
