@@ -1,380 +1,216 @@
-# Rayen's Digital Forge
+<h2>Hey 👋, I'm <a href="https://www.linkedin.com/in/rayen-abidi-9610913bb">Rayen Abidi</a></h2>
 
-Create a complete premium developer portfolio website for:
+<p>
+🎓 Software Engineering & Computer Science Student &nbsp;|&nbsp;
+💻 Full-Stack Developer &nbsp;|&nbsp;
+🚀 Building modern web applications
+</p>
 
-Rayen Abidi — Full Stack Developer
-
-The goal of this portfolio is to attract internship opportunities, full-time jobs, and freelance clients.
-
-The website should feel like a futuristic engineering portfolio mixed with a professional SaaS/product showcase. Do NOT create a generic portfolio template. It should feel unique, personal, and focused on real software engineering skills.
-
-## Overall Design Direction
-
-Style:
-- Dark futuristic theme
-- Premium modern UI
-- Professional but with creative animations
-- Inspired by high-end developer portfolios and SaaS landing pages
-- Mix of cyberpunk/futuristic visual effects with clean engineering aesthetics
-
-Colors:
-- Deep black background (#050505)
-- Dark gray surfaces
-- Blue/violet glowing accents
-- Subtle green accents inspired by technology and agriculture
-
-Use:
-- Glassmorphism cards
-- Soft radial glow backgrounds
-- Animated gradients
-- Grid overlays
-- Smooth scrolling
-- Elegant hover effects
-- Modern typography
-
-Avoid:
-- Generic portfolio layouts
-- Excessive neon effects
-- Template-looking sections
-- Too many unnecessary animations
-
-The final result should look like a developer who builds real production applications.
+<p>
+<a href="https://www.linkedin.com/in/rayen-abidi-9610913bb">
+<img src="https://img.shields.io/badge/LinkedIn-Rayen%20Abidi-0077B5?style=flat-square&logo=linkedin" alt="LinkedIn">
+</a>
+<a href="https://main-portfolio-blue-alpha.vercel.app/">
+<img src="https://img.shields.io/badge/Portfolio-Visit%20Website-000000?style=flat-square&logo=vercel" alt="Portfolio">
+</a>
+</p>
 
 ---
 
-# Hero Section
+<h2>👨‍💻 About Me</h2>
 
-Create an impressive first screen.
-
-Content:
-
-Rayen Abidi
-
-Full Stack Developer
-
-"Building scalable web applications with modern technologies."
-
-Short description:
-
-"I design and develop full-stack applications, from intuitive user interfaces to secure backend architectures."
-
-Display technology badges:
-
-- Next.js
-- TypeScript
-- Node.js
-- PostgreSQL
-- Prisma
-- Docker
-
-Include:
-- Animated developer workspace/desk 3D scene
-
-The 3D scene should represent:
-- Laptop with code editor
-- Floating technology icons
-- Developer desk setup
-- Modern futuristic environment
-
-Add CTA buttons:
-
-Primary:
-"View Projects"
-
-Secondary:
-"Contact Me"
-
+<ul>
+<li>🎓 3rd-year <strong>Software Engineering & Computer Science</strong> student at ISTIC — University of Carthage.</li>
+<li>💻 Full-Stack Developer focused on building <strong>real-world web applications</strong>.</li>
+<li>⚛️ Building frontend applications with <strong>Next.js, React, TypeScript and Tailwind CSS</strong>.</li>
+<li>⚙️ Developing backend systems and <strong>REST APIs</strong> with Node.js and Express.js.</li>
+<li>🗄️ Working with <strong>PostgreSQL, MySQL and Prisma ORM</strong>.</li>
+<li>🔐 Implementing authentication, authorization, JWT, HTTP-only cookies and role-based access control.</li>
+<li>🐳 Using <strong>Docker</strong> for containerization and reproducible development environments.</li>
+<li>📊 Interested in <strong>software architecture, backend engineering, APIs and scalable systems</strong>.</li>
+<li>🎯 Currently looking for a <strong>PFE internship</strong> in software / web development.</li>
+<li>🇫🇷 Preparing for future <strong>Master's and alternance opportunities in France</strong>.</li>
+</ul>
 
 ---
 
-# Interactive Developer Terminal Section
+<h2>🛠️ Tech Stack</h2>
 
-Create a unique terminal-style introduction.
+<h3>Languages</h3>
 
-Example:
+<p>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white">
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white">
+<img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black">
+</p>
 
-rayen@portfolio:~$ whoami
+<h3>Frontend</h3>
 
+<p>
+<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white">
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black">
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white">
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white">
+</p>
 
-{
-  "name": "Rayen Abidi",
-  "role": "Full Stack Developer",
-  "focus": [
-    "Web Applications",
-    "Backend Architecture",
-    "Modern UI/UX"
-  ],
-  "location": "Tunisia",
-  "available": true
-}
+<h3>Backend</h3>
 
+<p>
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white">
+<img src="https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white">
+<img src="https://img.shields.io/badge/REST_API-02569B?style=flat-square">
+<img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white">
+</p>
 
-Make it interactive with typing animations.
+<h3>Database & ORM</h3>
 
+<p>
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white">
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white">
+<img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white">
+</p>
 
----
+<h3>Tools & DevOps</h3>
 
-# About Me Section
-
-Create a professional developer introduction.
-
-Include:
-
-- Computer Science student
-- Full Stack Developer
-- Passionate about building scalable and user-friendly applications
-- Interested in modern web technologies and AI
-
-Make it concise and recruiter-friendly.
-
----
-
-# Bento Grid Skills Section
-
-Create an animated Bento Grid.
-
-Cards:
-
-## Frontend Engineering
-
-Technologies:
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- GSAP
-
-
-## Backend Engineering
-
-Technologies:
-- Node.js
-- Express.js
-- Prisma
-- REST APIs
-- Authentication systems
-
-
-## Database & Infrastructure
-
-Technologies:
-- PostgreSQL
-- MySQL
-- Docker
-- Git
-
-
-## Currently Learning
-
-- Artificial Intelligence
-- LLM applications
-- Advanced system architecture
-
-
-Make each card animated on hover.
+<p>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white">
+<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white">
+</p>
 
 ---
 
-# Projects Section
+<h2>🚀 Featured Projects</h2>
 
-Create a premium project showcase.
+<p>
+A selection of projects I've built to explore full-stack development,
+software architecture, authentication, APIs, databases and deployment.
+</p>
 
-Each project should look like a real product case study, not simple cards.
+<table>
+<tr>
+<td width="50%">
 
-## Project 1
+<h3>🌿 Olex-TN</h3>
 
-Title:
-Secure File Sharing Platform
+<p>
+Multi-role platform for managing olive-oil export procedures,
+document workflows, validation processes and administrative operations.
+</p>
 
-Description:
+<p>
+<strong>Next.js · React · Node.js · Express · PostgreSQL · Prisma · Docker</strong>
+</p>
 
-"A secure platform for sharing files with authentication, permissions, and activity tracking."
+<a href="https://main-portfolio-blue-alpha.vercel.app/olex-tn">
+→ View Case Study
+</a>
 
-Features:
-- Authentication system
-- Protected routes
-- File management
-- User permissions
-- Notifications
-- Activity tracking
+</td>
 
-Technologies:
-- Next.js
-- TypeScript
-- PostgreSQL
-- Prisma
-- Docker
+<td width="50%">
 
+<h3>🍴 Foody</h3>
 
----
+<p>
+Full-stack recipe and nutrition platform with authentication,
+personal recipe management and an administration system.
+</p>
 
-## Project 2
+<p>
+<strong>Next.js · Express · MySQL · JWT · Tailwind CSS</strong>
+</p>
 
-Title:
-Food Application
+<a href="https://foody-omega-flax.vercel.app/">
+→ Live Demo
+</a>
+</td>
+</tr>
 
-Description:
+<tr>
+<td width="50%">
 
-"A modern food application focused on user experience, ordering workflow, and responsive design."
+<h3>🔐 Secure File Sharing</h3>
 
-Technologies:
-- Next.js
-- React
-- Tailwind CSS
-- Node.js
+<p>
+Secure file-sharing platform with authentication,
+permissions, file management, notifications and activity tracking.
+</p>
 
+<p>
+<strong>Next.js · Express · PostgreSQL · Prisma · Docker</strong>
+</p>
 
----
+<a href="https://github.com/rayen-abidi05/sharing">
+→ View Repository
+</a>
 
-## Project 3
+</td>
 
-Title:
-Developer Portfolio
+<td width="50%">
 
-Description:
+<h3>💻 Developer Portfolio</h3>
 
-"The portfolio itself, built with modern frontend technologies and advanced animations."
+<p>
+Personal portfolio showcasing my projects, technical experience
+and full-stack development work.
+</p>
 
-Technologies:
-- Next.js
-- TypeScript
-- Framer Motion
-- Three.js
+<p>
+<strong>React · TypeScript · Tailwind CSS · TanStack Router · Motion</strong>
+</p>
 
+<a href="https://main-portfolio-blue-alpha.vercel.app/">
+→ Visit Portfolio
+</a>
+</td>
+</tr>
+</table>
 
-For each project add:
-- Image/mockup area
-- Technology tags
-- GitHub button
-- Live demo button
-- Smooth hover animations
-
----
-
-# Engineering Workflow Section
-
-Create a timeline showing how Rayen builds applications.
-
-Steps:
-
-01
-Planning & Architecture
-
-02
-Frontend Development
-
-03
-Backend API Development
-
-04
-Database Design
-
-05
-Testing & Deployment
-
-
-Make it look like a software engineering pipeline.
+<p align="center">
+<a href="https://main-portfolio-blue-alpha.vercel.app/">
+<strong>→ Explore all my work</strong>
+</a>
+</p>
 
 ---
 
-# Experience / Journey Timeline
+<h2>📌 What I'm Currently Working On</h2>
 
-Create a timeline:
-
-2024
-
-Started Computer Science journey and web development.
-
-2025
-
-Focused on full-stack development:
-- APIs
-- Authentication systems
-- Database architecture
-
-
-2026
-
-Building production-level applications and exploring AI technologies.
-
+<ul>
+<li>🚀 Improving my full-stack development and software architecture skills.</li>
+<li>🔐 Designing more secure and maintainable backend systems.</li>
+<li>🐳 Deepening my knowledge of Docker, deployment and production environments.</li>
+<li>☁️ Exploring modern deployment and cloud workflows.</li>
+<li>🇫🇷 Preparing for Master's and future alternance opportunities in France.</li>
+<li>💼 Looking for a <strong>PFE internship</strong> in software / web development.</li>
+</ul>
 
 ---
 
-# Contact Section
+<h2>📫 Let's Connect</h2>
 
-Create a premium contact section.
+<p>
+I'm open to opportunities and conversations around
+<strong>software engineering, full-stack development, internships,
+alternance and freelance projects</strong>.
+</p>
 
-Title:
-
-"Let's build something impactful."
-
-Include:
-
-- Email copy button
-- LinkedIn button
-- GitHub button
-
-Add a small confetti animation when copying email.
-
----
-
-# Technical Requirements
-
-Use:
-
-- Next.js 14 App Router
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Three.js / React Three Fiber for 3D workspace
-- Lucide React icons
-
-Architecture should be clean and component-based.
-
-Create reusable components:
-
-- Hero
-- Terminal
-- BentoGrid
-- ProjectCard
-- Timeline
-- ContactSection
-- Navbar
-- Footer
-
-
-The website must be:
-- Fully responsive
-- Mobile friendly
-- Fast loading
-- Accessible
-- SEO optimized
-
-The final result should feel like:
-
-"A talented Full Stack Engineer showcasing real-world applications."
-
-Not:
-"Another copied developer portfolio template."
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/3bb0e8f8-f93b-4ba8-90ed-e2264fe68862).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+<p>
+<a href="mailto:abidirayen7805@gmail.com">
+<strong>Email</strong>
+</a>
+&nbsp; • &nbsp;
+<a href="https://www.linkedin.com/in/rayen-abidi-9610913bb">
+<strong>LinkedIn</strong>
+</a>
+&nbsp; • &nbsp;
+<a href="https://main-portfolio-blue-alpha.vercel.app/">
+<strong>Portfolio</strong>
+</a>
+</p>
