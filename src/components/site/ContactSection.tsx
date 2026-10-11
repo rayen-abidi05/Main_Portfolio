@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { Copy, Check, Github, Linkedin, Mail } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 
-const EMAIL = "rayen.abidi@email.com";
+const EMAIL = "abidirayen7805@gmail.com";
 
 const pieces = Array.from({ length: 26 }, (_, i) => ({
   id: i,
